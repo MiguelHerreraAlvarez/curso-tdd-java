@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-public class Item {
+public abstract class Item {
 
     public String name;
 
@@ -16,6 +16,7 @@ public class Item {
 
    @Override
    public String toString() {
-        return this.name + ", " + this.sellIn + ", " + this.quality;
-    }
+        return this.name + ", " + this.sellIn + ", " + this.quality; }
+
+   public abstract void update();
 }
