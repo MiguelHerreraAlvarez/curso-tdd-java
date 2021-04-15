@@ -18,10 +18,10 @@ public class GildedRoseTest {
 
   @BeforeEach
   public void setUp(){
-    sulfuras = new SulfurasItem(sulfurasName, 4, 25);
-    agedBrie = new AgedBrieItem(agedBrieName, 1, 10);
-    ticket = new TicketItem(ticketName, 12, 10);
-    normalItem = new NormalItem("foo", 1, 10);
+    sulfuras = new Item(sulfurasName, 4, 25);
+    agedBrie = new Item(agedBrieName, 1, 10);
+    ticket = new Item(ticketName, 11, 10);
+    normalItem = new Item("foo", 1, 10);
   }
 
   @Test
@@ -124,7 +124,7 @@ public class GildedRoseTest {
 
     app.updateQuality();
 
-    assertEquals(11, ticket.sellIn);
+    assertEquals(10, ticket.sellIn);
     assertEquals(11, ticket.quality);
   }
 

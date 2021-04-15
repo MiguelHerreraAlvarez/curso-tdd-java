@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-public abstract class Item {
+public class Item {
 
     public String name;
 
@@ -18,5 +18,4 @@ public abstract class Item {
    public String toString() {
         return this.name + ", " + this.sellIn + ", " + this.quality; }
 
-   public abstract void update();
 }
